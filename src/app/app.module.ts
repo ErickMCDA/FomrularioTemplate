@@ -1,16 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module'; // Asegúrate de que este módulo tiene las rutas configuradas
 import { AppComponent } from './app.component';
+import { TemplateFormsComponent } from './components/template-forms/template-forms.component';  // Importa tu componente
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TemplateFormsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
